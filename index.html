@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button on Image</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+        .image {
+            display: block;
+        }
+        
+        .button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: rgba(255, 0, 0, 0.9);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            
+        }
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+.Text{
+
+   position: absolute;
+   top: 27%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: rgb(255, 0, 43);
+   font-size: 40px;
+   font-weight: bold;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.8);
+   background-size: 5px;
+   stroke-width: 100px;
+   stroke: black;
+   -webkit-text-stroke: 0px rgb(255, 2, 2);
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.wallpapersden.com/image/download/gaming-poster-of-horizon-call-of-the-mountain-4k_bmVrbWuUmZqaraWkpJRobWllrWdma2U.jpg" alt="Sample Image" style="width: 1366px; height: 720px";;>
+        <button class="button"button id="openPopup">SHOW PAGE</button>
+        <div class="Text"><strong>WELLCOME TO RED X CHEATS</strong></div>></div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <img src="myphoto.jpg" alt="Popup Image" style="width: 1366px; height: 720px;;">
+        </div>
+   
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
